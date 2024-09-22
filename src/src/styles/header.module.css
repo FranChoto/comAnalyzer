@@ -1,0 +1,40 @@
+.main{
+    position: fixed;
+    width: 100%;
+    nav{
+        margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            width: 40%;
+            justify-content: space-evenly;
+            gap: 1rem;
+            background-color: #4f4f4f;
+            border-radius: 2rem;
+            box-shadow: rgb(44, 44, 44, 0.5) 0.4rem 0.4rem 0.4rem;
+            li{
+                font-size: large;
+                list-style: none;
+                cursor: pointer;
+                color: rgb(189, 189, 189);
+            }
+            li:hover{
+                color: white;
+            }
+            .active{
+                background-color: white;
+                padding: 1rem 7rem;
+                border-radius: 2rem;
+                color: #4f4f4f;
+            }
+            .active:hover{
+                color: #4f4f4f;
+            }
+        }
+    }
+}
