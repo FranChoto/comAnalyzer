@@ -5,6 +5,7 @@
     height: 100vh;
     .grid{
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(19, 1fr);
         grid-template-rows: repeat(19, 1fr);
         grid-column-gap: 10px;
@@ -15,18 +16,17 @@
             justify-content: center;
             padding: 2rem 3rem;
             border-radius: 10px;
-            border: 3px solid #3b3b3b;
             color: white;
         }
         .square1{
-            background-color: #211f53;
-            grid-column: 2 / 10;
-            grid-row: 3 / 12;
+            background-color: #37355c;
+            grid-column: 2 / 15;
+            grid-row: 4 / 12;
         }
         .square2{
             background-color: #211f53;
-            grid-column: 10 / 19;
-            grid-row: 3 / 15;
+            grid-column: 15 / 19;
+            grid-row: 4 / 25;
         }
         .square3{
             background-color: #211f53;
@@ -35,8 +35,8 @@
         }
         .square4{
             background-color: #211f53;
-            grid-column: 10 / 19;
-            grid-row: 15 / 25;
+            grid-column: 10 / 15;
+            grid-row: 12 / 25;
         }
     }
 }
