@@ -9,3 +9,24 @@
 body{
     background-color: #1a1c29;
 }
+
+/* Personalizar la barra de desplazamiento completa */
+::-webkit-scrollbar {
+    width: 6px;  /* Ancho de la barra de desplazamiento (fina) */
+  }
+  
+  /* Ocultar el fondo de la pista (la parte detrás del pulgar) */
+  ::-webkit-scrollbar-track {
+    background: transparent;  /* Sin fondo */
+  }
+  
+  /* Estilo del pulgar (la parte que se mueve en la barra) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;  /* Color gris visible */
+    border-radius: 10px;      /* Bordes redondeados */
+  }
+  
+  /* Cambiar el color del pulgar cuando esté en hover (al pasar el mouse por encima) */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;  /* Color más oscuro en hover */
+  }

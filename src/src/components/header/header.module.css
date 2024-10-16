@@ -2,23 +2,22 @@
     z-index: 10;
     position: fixed;
     width: 100%;
-
+    
     nav {
         margin-top: 0.5rem;
         display: flex;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between;
-
-        ul {
+        gap: 23rem;
+        ul { 
             display: flex;
             align-items: center;
             flex-direction: row;
-            width: 40%;
+            width: 50%;
             justify-content: space-evenly;
             gap: 1rem;
             background-color: #44445c;
-            border-radius: 2rem;
+            border-radius: 10rem;
             box-shadow: rgb(44, 44, 44, 0.5) 0.4rem 0.4rem 0.4rem;
             li{
                 text-decoration: none;

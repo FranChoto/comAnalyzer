@@ -2,10 +2,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 120px);
     .grid{
         display: grid;
         width: 100%;
+        height: calc(100vh - 10px);
         grid-template-columns: repeat(19, 1fr);
         grid-template-rows: repeat(19, 1fr);
         grid-column-gap: 10px;
@@ -14,29 +15,28 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 2rem 3rem;
             border-radius: 10px;
             color: white;
         }
-        .square1{
+        .mapa{
             background-color: #37355c;
             grid-column: 2 / 15;
             grid-row: 4 / 12;
         }
-        .square2{
+        .alertas{
             background-color: #211f53;
             grid-column: 15 / 19;
-            grid-row: 4 / 25;
+            grid-row: 4 / 19;
         }
-        .square3{
+        .grafico{
             background-color: #211f53;
             grid-column: 2 / 10;
-            grid-row: 12 / 25;
+            grid-row: 12 / 19;
         }
-        .square4{
+        .porcentajes{
             background-color: #211f53;
             grid-column: 10 / 15;
-            grid-row: 12 / 25;
+            grid-row: 12 / 19;
         }
     }
 }
@@ -44,7 +44,18 @@
     background-color: #211f53;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    .graphContainer{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
 }

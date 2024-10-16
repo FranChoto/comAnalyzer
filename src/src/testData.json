@@ -1,0 +1,182 @@
+[
+    {
+      "Nombre": "Camara 1",
+      "IP": "192.168.170.101",
+      "Servidor": "Servidor 1",
+      "Zona": "Zona A",
+      "Latitud": 19.432608,
+      "Longitud": -99.133209,
+      "Tipo": "domo"
+    },
+    {
+      "Nombre": "Camara 2",
+      "IP": "192.168.200.102",
+      "Servidor": "Servidor 1",
+      "Zona": "Zona B",
+      "Latitud": 40.712776,
+      "Longitud": -74.005974,
+      "Tipo": "LPR"
+    },
+    {
+      "Nombre": "Camara 3",
+      "IP": "192.168.40.103",
+      "Servidor": "Servidor 2",
+      "Zona": "Zona C",
+      "Latitud": 51.507351,
+      "Longitud": -0.127758,
+      "Tipo": "Pulsador"
+    },
+    {
+      "Nombre": "Camara 4",
+      "IP": "192.168.9.104",
+      "Servidor": "Servidor 2",
+      "Zona": "Zona D",
+      "Latitud": 34.052235,
+      "Longitud": -118.243683,
+      "Tipo": "fija"
+    },
+    {
+      "Nombre": "Camara 5",
+      "IP": "192.168.1.105",
+      "Servidor": "Servidor 3",
+      "Zona": "Zona D",
+      "Latitud": 48.856613,
+      "Longitud": 2.352222,
+      "Tipo": "domo"
+    },
+    {
+      "Nombre": "Camara 6",
+      "IP": "192.168.1.106",
+      "Servidor": "Servidor 3",
+      "Zona": "Zona F",
+      "Latitud": -33.868820,
+      "Longitud": 151.209296,
+      "Tipo": "LPR"
+    },
+    {
+      "Nombre": "Camara 7",
+      "IP": "192.168.1.107",
+      "Servidor": "Servidor 4",
+      "Zona": "Zona G",
+      "Latitud": 35.689487,
+      "Longitud": 139.691711,
+      "Tipo": "Pulsador"
+    },
+    {
+      "Nombre": "Camara 8",
+      "IP": "192.168.1.108",
+      "Servidor": "Servidor 4",
+      "Zona": "Zona H",
+      "Latitud": 55.755825,
+      "Longitud": 37.617298,
+      "Tipo": "fija"
+    },
+    {
+      "Nombre": "Camara 9",
+      "IP": "192.168.1.109",
+      "Servidor": "Servidor 5",
+      "Zona": "Zona I",
+      "Latitud": 41.902782,
+      "Longitud": 12.496366,
+      "Tipo": "domo"
+    },
+    {
+      "Nombre": "Camara 10",
+      "IP": "192.168.1.110",
+      "Servidor": "Servidor 5",
+      "Zona": "Zona J",
+      "Latitud": 52.520008,
+      "Longitud": 13.404954,
+      "Tipo": "LPR"
+    },
+    {
+      "Nombre": "Camara 11",
+      "IP": "192.168.1.111",
+      "Servidor": "Servidor 6",
+      "Zona": "Zona K",
+      "Latitud": 37.774929,
+      "Longitud": -122.419418,
+      "Tipo": "domo"
+    },
+    {
+      "Nombre": "Camara 12",
+      "IP": "192.168.1.112",
+      "Servidor": "Servidor 6",
+      "Zona": "Zona L",
+      "Latitud": -23.550520,
+      "Longitud": -46.633308,
+      "Tipo": "Pulsador"
+    },
+    {
+      "Nombre": "Camara 13",
+      "IP": "192.168.1.113",
+      "Servidor": "Servidor 7",
+      "Zona": "Zona M",
+      "Latitud": 35.676193,
+      "Longitud": 139.650311,
+      "Tipo": "LPR"
+    },
+    {
+      "Nombre": "Camara 14",
+      "IP": "192.168.1.114",
+      "Servidor": "Servidor 7",
+      "Zona": "Zona N",
+      "Latitud": 28.613939,
+      "Longitud": 77.209023,
+      "Tipo": "fija"
+    },
+    {
+      "Nombre": "Camara 15",
+      "IP": "192.168.1.115",
+      "Servidor": "Servidor 8",
+      "Zona": "Zona O",
+      "Latitud": 31.230391,
+      "Longitud": 121.473701,
+      "Tipo": "domo"
+    },
+    {
+      "Nombre": "Camara 16",
+      "IP": "192.168.1.116",
+      "Servidor": "Servidor 8",
+      "Zona": "Zona P",
+      "Latitud": -34.603684,
+      "Longitud": -58.381559,
+      "Tipo": "LPR"
+    },
+    {
+      "Nombre": "Camara 17",
+      "IP": "192.168.1.117",
+      "Servidor": "Servidor 9",
+      "Zona": "Zona Q",
+      "Latitud": 51.165691,
+      "Longitud": 10.451526,
+      "Tipo": "Pulsador"
+    },
+    {
+      "Nombre": "Camara 18",
+      "IP": "192.168.1.118",
+      "Servidor": "Servidor 9",
+      "Zona": "Zona R",
+      "Latitud": 45.464203,
+      "Longitud": 9.189982,
+      "Tipo": "fija"
+    },
+    {
+      "Nombre": "Camara 19",
+      "IP": "192.168.1.119",
+      "Servidor": "Servidor 10",
+      "Zona": "Zona S",
+      "Latitud": 59.934280,
+      "Longitud": 30.335098,
+      "Tipo": "domo"
+    },
+    {
+      "Nombre": "Camara 20",
+      "IP": "192.168.1.120",
+      "Servidor": "Servidor 10",
+      "Zona": "Zona T",
+      "Latitud": 60.169856,
+      "Longitud": 24.938379,
+      "Tipo": "LPR"
+    }
+]
