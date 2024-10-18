@@ -5,7 +5,6 @@ import PopUp from '../../components/popUp/PopUp';
 
 function CheckScreen() {
     const [cameras, setCameras] = useState(data);
-    const [isOpen, setIsOpen] = useState(false);
     const [type, setType] = useState('nombre');
 
     const searchHandler = (e) => {
@@ -27,22 +26,32 @@ function CheckScreen() {
         }
     }
 
-    const togglePopup = () => {
-        setIsOpen(!isOpen);
-    }
+    // const togglePopup = () => {
+    //     setIsOpen(!isOpen);
+    // }
 
 
     return (
         <div className={styles.main}>
-            <h1>Check Screen</h1>
-            <PopUp togglePopup={togglePopup} isOpen={isOpen}/>
+            <div className={styles.header}>
+                <h1>Check Screen</h1>
+                <div className={styles.searchContainer}>
+                        <input type="text" onChange={(e) => searchHandler(e)} placeholder="Search..." />
+                        <select name="search" onChange={(e) => setType(e.target.value)}>
+                            <option value="nombre" selected>Nombre</option>
+                            <option value="ip">IP</option>
+                            <option value="zona">Zona</option>
+                        </select>
+                        <p>Tipo: </p>
+                        <select name="select" >
+                            <option value="fija">Fija</option>
+                            <option value="domo">Domo</option>
+                            <option value="LPR">LPR</option>
+                            <option value="Pulsador">Pulsador</option>
+                        </select>
+                </div>
+            </div>
             <div className={styles.tableContainer}>
-                <input type="text" onChange={(e) => searchHandler(e)} placeholder="Search..."/>
-                <select name="search" onChange={(e) => setType(e.target.value)}>
-                    <option value="nombre" selected>Nombre</option>
-                    <option value="ip">IP</option>
-                    <option value="zona">Zona</option>
-                </select>
                 <div className={styles.table}>
                     <div className={styles.tableHeader}>
                         <p>IP</p>
@@ -51,18 +60,21 @@ function CheckScreen() {
                         <p>Zona</p>
                         <p>Ubicacion</p>
                         <p>Tipo</p>
+                        <p>Acciones</p>
                     </div>
                     <div className={styles.tableBody}>
                         {cameras.map(camara => (
-                            <div className={styles.tableRow} key={camara.IP}>
-                                <p>{camara.IP}</p>
-                                <p>{camara.Nombre}</p>
-                                <p>{camara.Servidor}</p>
-                                <p>{camara.Zona}</p>
-                                <p>{`${camara.Latitud}, ${camara.Longitud}`}</p>
-                                <p>{camara.Tipo}</p>
-
-                            </div>
+                            <>
+                                <div className={styles.tableRow} key={camara.IP}>
+                                    <p>{camara.IP}</p>
+                                    <p>{camara.Nombre}</p>
+                                    <p>{camara.Servidor}</p>
+                                    <p>{camara.Zona}</p>
+                                    <p>{`${camara.Latitud}, ${camara.Longitud}`}</p>
+                                    <p>{camara.Tipo}</p>
+                                    <p><PopUp name={camara.Nombre} /></p>
+                                </div>
+                            </>
                         ))}
                     </div>
                 </div>

@@ -1,13 +1,20 @@
+import { useState } from 'react';
 import styles from './popUp.module.css';
+/* eslint-disable react/prop-types */
 
-function PopUp({ togglePopup , isOpen}) {
+function PopUp({ name }) {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const togglePopup = () => {
+        setIsOpen(!isOpen);
+    }
 
     if (isOpen) {
         return (
             <div className={styles.popupContainer}>
                 <div className={styles.insideContainer}>
                     <h2>PopUp</h2>
-                    <p>Test PopUp</p>
+                    <p>Seguro que quieres borrar la camara con el nombre : {name}</p>
                     <div className={styles.buttonContainer}>
                         <button>Yes</button>
                         <button onClick={() => togglePopup()}>No</button>
@@ -17,7 +24,7 @@ function PopUp({ togglePopup , isOpen}) {
         );
     } else {
         return (
-          <button onClick={() => togglePopup()}>Click</button>  
+            <button onClick={() => togglePopup()}>Click</button>
         );
     }
 }

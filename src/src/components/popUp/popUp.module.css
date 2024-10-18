@@ -1,8 +1,9 @@
 .popupContainer{
-    padding: 3rem 0;
     display: flex;
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
     height: 100vh;
     z-index: 100;
     align-items: center;
