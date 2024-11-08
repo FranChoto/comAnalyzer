@@ -17,6 +17,20 @@
         border-radius: 10px;
         align-items: center;
         justify-content: center;
-        background-color: #ffffff;
+        background-color: #979797;
+        p{
+            font-size: x-large;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
+
+.toogleButton{
+    button{
+        border-radius: 10px;
+        border: none;
+        padding: 0.3rem 0.5rem;
+        background-color: #221f82;
+        color: #fff;
     }
 }
