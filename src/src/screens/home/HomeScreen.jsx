@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react';
 import Alert from '../../components/alert/Alert';
 import styles from './homeScreen.module.css';
 import { LineChart, Line, XAxis, CartesianGrid, Tooltip, BarChart, Bar, YAxis, Pie, PieChart, Cell, Legend } from 'recharts';
-
-
 function HomeScreen() {
 
+
+    const apiUrl = import.meta.env.VITE_API_URL;
     const [data, setData] = useState([]);
 
     const fetchData = async (url, setData) => {
@@ -21,7 +21,7 @@ function HomeScreen() {
 
     const fetchAllData = async () => {
         await Promise.all([
-            fetchData("http://172.25.8.215:2300/api/camera/getCameras", setData),
+            fetchData(`${apiUrl}/api/camera/getCameras`, setData),
         ]);
     };
 

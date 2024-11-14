@@ -1,6 +1,4 @@
 import { useState, useEffect } from 'react';
-// import data from '../../../src/testData.json';
-// import axios from 'axios';
 import styles from './checkScreen.module.css';
 import PopUp from '../../components/popUp/PopUp';
 
@@ -13,6 +11,7 @@ function CheckScreen() {
         estado: 'Todo',
         searchValue: ''
     });
+    const apiUrl = import.meta.env.VITE_API_URL;
 
     const fetchData = async (url, setData) => {
         try {
@@ -26,7 +25,7 @@ function CheckScreen() {
 
     const fetchAllData = async () => {
         await Promise.all([
-            fetchData("http://172.25.8.215:2300/api/camera/getCameras", setData),
+            fetchData(`${apiUrl}/api/camera/getCameras`, setData),
         ]);
     };
 
