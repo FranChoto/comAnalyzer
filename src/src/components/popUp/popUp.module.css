@@ -26,11 +26,22 @@
 }
 
 .toogleButton{
+    width: min-content;
     button{
         border-radius: 10px;
         border: none;
         padding: 0.3rem 0.5rem;
         background-color: #221f82;
+        color: #fff;
+    }
+}
+.addButton{
+    width: min-content;
+    button{
+        border-radius: 10px;
+        border: none;
+        padding: 0.3rem 0.5rem;
+        background-color: #069e22;
         color: #fff;
     }
 }

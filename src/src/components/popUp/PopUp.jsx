@@ -22,11 +22,22 @@ function PopUp({ name, action }) {
                         </div>
                     </div>
                 </div>
-            ) : (
+            ) : (action === "edit") ? (
                 <div className={styles.popupContainer}>
                     <div className={styles.insideContainer}>
                         <h2>Editar</h2>
                         <p>Seguro que quieres editar la camara con el nombre : {name} </p>
+                        <div className={styles.buttonContainer}>
+                            <button>Yes</button>
+                            <button onClick={() => togglePopup()}>No</button>
+                        </div>
+                    </div>
+                </div>
+            ) : (
+                <div className={styles.popupContainer}>
+                    <div className={styles.insideContainer}>
+                        <h2>Agregar</h2>
+                        <p>Seguro que quieres agregar una camara?</p>
                         <div className={styles.buttonContainer}>
                             <button>Yes</button>
                             <button onClick={() => togglePopup()}>No</button>
@@ -38,9 +49,9 @@ function PopUp({ name, action }) {
         );
     } else {
         return (
-            <div className={styles.toogleButton}>
+            <div className={(action === "delete" || action === "edit") ? styles.toogleButton : styles.addButton}>
                 <button onClick={() => togglePopup()}>
-                    {(action === "delete") ? "Borrar" : "Editar"}
+                    {(action === "delete") ? "Borrar" : (action === "edit") ? "Editar" : "Agregar"}
                 </button>
             </div>
         );

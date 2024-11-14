@@ -1,0 +1,93 @@
+[
+    {
+      "name": "SV11",
+      "zone": "Villa Bosch",
+      "mainIp": "172.25.82.11",
+      "ipsRange": "172.25.82.0-172.25.82.255",
+      "status": "offline",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "name": "SV12",
+      "zone": "San Miguel",
+      "mainIp": "172.25.83.12",
+      "ipsRange": "172.25.83.0-172.25.83.255",
+      "status": "online",
+      "username": "user",
+      "password": "password123"
+    },
+    {
+      "name": "SV13",
+      "zone": "Morón",
+      "mainIp": "172.25.84.13",
+      "ipsRange": "172.25.84.0-172.25.84.255",
+      "status": "offline",
+      "username": "root",
+      "password": "rootpass"
+    },
+    {
+      "name": "SV14",
+      "zone": "Ituzaingó",
+      "mainIp": "172.25.85.14",
+      "ipsRange": "172.25.85.0-172.25.85.255",
+      "status": "online",
+      "username": "operator",
+      "password": "op_pass"
+    },
+    {
+      "name": "SV15",
+      "zone": "Caseros",
+      "mainIp": "172.25.86.15",
+      "ipsRange": "172.25.86.0-172.25.86.255",
+      "status": "offline",
+      "username": "tech",
+      "password": "tech1234"
+    },
+    {
+      "name": "SV16",
+      "zone": "Tres de Febrero",
+      "mainIp": "172.25.87.16",
+      "ipsRange": "172.25.87.0-172.25.87.255",
+      "status": "online",
+      "username": "support",
+      "password": "support123"
+    },
+    {
+      "name": "SV17",
+      "zone": "Haedo",
+      "mainIp": "172.25.88.17",
+      "ipsRange": "172.25.88.0-172.25.88.255",
+      "status": "offline",
+      "username": "monitor",
+      "password": "mon_pass"
+    },
+    {
+      "name": "SV18",
+      "zone": "El Palomar",
+      "mainIp": "172.25.89.18",
+      "ipsRange": "172.25.89.0-172.25.89.255",
+      "status": "online",
+      "username": "security",
+      "password": "secureme"
+    },
+    {
+      "name": "SV19",
+      "zone": "Ciudadela",
+      "mainIp": "172.25.90.19",
+      "ipsRange": "172.25.90.0-172.25.90.255",
+      "status": "offline",
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "name": "SV20",
+      "zone": "Hurlingham",
+      "mainIp": "172.25.91.20",
+      "ipsRange": "172.25.91.0-172.25.91.255",
+      "status": "online",
+      "username": "engineer",
+      "password": "eng12345"
+    }
+  ]
+  
